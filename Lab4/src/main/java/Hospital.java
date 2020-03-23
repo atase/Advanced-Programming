@@ -5,7 +5,7 @@ public class Hospital implements Comparable<Hospital> {
 
     private String name;
     private int capacity;
-    List<Resident> residentList;
+    private List<Resident> residentList;
 
     public Hospital(){
         this.name = null;
