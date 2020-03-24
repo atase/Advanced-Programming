@@ -1,0 +1,16 @@
+<html>
+  <body>
+       <h2>Id is $ID</h2>
+       <h2>Name is $NAME</h2>
+       <h2>Catalog contains $NUMBER documents : </h2>
+       #foreach($document in $documents)
+            <h2>*****************************************************************************</h2>
+            <h3>ID : $document.getId()</h3>
+            <h3>PATH : $document.getPath()</h3>
+            <h3>NAME : $document.getName()</h3>
+            <h3>TAGS : $document.getTags()</h3>
+            <h3>TYPE : $document.getType()</h3>
+            <h2>*****************************************************************************</h2>
+       #end
+  </body>
+</html>

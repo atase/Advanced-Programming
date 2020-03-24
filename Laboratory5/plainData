@@ -1,0 +1,21 @@
+ID : 129032
+Name : Catalog
+Catalog contains 3 elements : 
+ID : 123987
+Name : PHP - example
+Path : C:\Users\Alexandru\Documents\PHP\hello.php
+Type : Code file
+Tags : {year=2020, author=Nastasa Petru-Alexandru, scope=TW-laboratory}
+
+ID : 129735
+Name : RealWorldHaskell.pdf
+Path : C:\Users\Alexandru\Documents\Books\RealWorldHaskell.pdf
+Type : Book
+Tags : {description=Haskell language, year=2005, author=Bryan O'Sullivan}
+
+ID : 983667
+Name : Ingineria Programarii - curs 1
+Path : C:\Users\Alexandru\Documents\Cursuri\IP01.pdf
+Type : PDF
+Tags : {year=2020, author=Adrian Iftene, faculty=Univ. Alexandru Ioan Cuza - Facultatea de Informatica}
+
