@@ -71,31 +71,6 @@ public class Problem {
         Catalog catalog = new Catalog(id, name, documents);
         catalogs.add(catalog);
 
-        // Save catalog
-        /*Operation op = new Operation();
-        try {
-            op.savePlainText(catalog, plainTextFilename);
-            op.saveBinary(catalog, binaryFilename);
-        }catch(Exception exception){
-            exception.printStackTrace();
-        }
-        op.view("C:/Users/Alexandru/Documents/PHP/hello.php");
-        op.viewURL("https://www.google.com/");
-
-        Catalog loadedPlainCatalog = new Catalog();
-        Catalog loadedBinaryCatalog = new Catalog();
-
-        try {
-            loadedPlainCatalog = op.loadPlainText(plainTextFilename);
-            System.out.println(loadedPlainCatalog.toString());
-            loadedBinaryCatalog = op.loadBinary(binaryFilename);
-            System.out.println(loadedBinaryCatalog.toString());
-        }catch(Exception exception){
-            exception.printStackTrace();
-        }*/
-
-
-
         Shell shell = new Shell(catalogs);
 
         while(true) {

@@ -121,7 +121,7 @@ public class Shell {
             return false;
         }
 
-        if(parts[0].equals("load") && (parts.length != 3 || (!parts[2].equals("plain") || !parts[2].equals("binary")))) {
+        if(parts[0].equals("load") && parts.length != 3 && (!parts[2].equals("plain") || !parts[2].equals("binary"))) {
             return false;
         }
 
@@ -147,6 +147,7 @@ public class Shell {
         if(parts.length > 3){
             this.catalogId = parts[3];
         }
+
 
         return true;
     }
@@ -191,7 +192,7 @@ public class Shell {
             LoadCommand load = new LoadCommand(this.command, this.path, this.filetype);
             if(load.validateCommand()) {
                 this.catalog = load.load();
-                this.catalog.toString();
+                System.out.println(this.catalog.toString());
             }
         }else if(this.command.equals("report")){
             ReportCommand report = new ReportCommand(this.command, this.catalogId, this.catalogs);

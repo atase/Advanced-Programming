@@ -82,7 +82,6 @@ public class LoadCommand implements Command {
             System.out.println("\n[ LOADING PLAIN TEXT FILE ]\n");
             this.catalog = this.loadPlainText(this.path);
         }
-
        return this.catalog;
     }
 
