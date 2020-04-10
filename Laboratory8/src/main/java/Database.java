@@ -25,4 +25,9 @@ class Database {
 
         return instance;
     }
+
+    public void closeConnection() throws SQLException {
+        connection.close();
+    }
+
 }

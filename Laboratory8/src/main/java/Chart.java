@@ -1,12 +1,11 @@
 import java.sql.Connection;
 import java.sql.SQLException;
-import java.util.Map;
+import java.util.List;
 
 public interface Chart {
-    public void findArtistById(String id) throws SQLException;
-    public void findAlbumById(String id) throws SQLException;
-    public void queryTopTable() throws SQLException;
-    public Map<Artist, Album> getData();
+    public Artist findArtistById(String id) throws SQLException;
+    public Album findAlbumById(String id) throws SQLException;
+    public List<TopElement> queryTopTable() throws SQLException;
     public String toString();
     public void setConnection(Connection connection);
 }

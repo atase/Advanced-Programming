@@ -19,7 +19,6 @@ public class Problem {
     public static void main(String[] args) throws SQLException, ClassNotFoundException {
 
         Faker faker = new Faker();
-
         Database database = Database.getInstance();
         TopYear top = new TopYear();
 
@@ -32,10 +31,16 @@ public class Problem {
         artistController.setConnection(database.getConnection());
         /*artistController.create(faker.artist().name(), faker.address().country());*/
         artists = artistController.findByName("NimeniAltu");
+        artists = artistController.findByName("NimeniAltu");
+
+
+        System.out.println("\n*****[ ALBUM ]*****\n");
 
         for(Album album : albums){
             System.out.println(album.toString());
         }
+
+        System.out.println("\n*****[ ARTIST ]*****\n");
 
         for(Artist artist : artists){
             System.out.println(artist.toString());
@@ -43,8 +48,12 @@ public class Problem {
 
 
         top.setConnection(database.getConnection());
+        /*top.create("ID001", "ID071", 123);
+        top.create("ID001", "ID928", 356);*/
         top.queryTopTable();
         System.out.println(top.toString());
+
+        database.closeConnection();
 
     }
 }
